@@ -138,7 +138,6 @@ class SiteController extends Controller
                 'whatsapp' => $request->input('whatsapp'),
                 'experience' => $request->input('experience'),
                 'about' => $request->input('about'),
-                'review' => json_encode([]),
                 'service_area' => json_encode($service_areas),
                 'password' => bcrypt($request->input('password')),
                 'training' => $request->input('training'),
