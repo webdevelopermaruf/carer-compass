@@ -11,7 +11,7 @@ Route::get('/forget-password', [SiteController::class, 'forgetPassword']);
 Route::post('/forget-password', [SiteController::class, 'handleForgetPassword']);
 
 Route::get('/reset-password/{token}', [SiteController::class, 'resetPassword'])->name('password.reset');
-Route::get('/reset-password', [SiteController::class, 'changePassword']);
+Route::post('/reset-password', [SiteController::class, 'changePassword']);
 
 Route::get('/search', [SiteController::class, 'search']); // Search Pages
 Route::get('/profile/{id}', [SiteController::class, 'profile']); // Individual Page

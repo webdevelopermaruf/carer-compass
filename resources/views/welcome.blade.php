@@ -35,14 +35,10 @@
                         warm, welcoming environment, we’re here to make your day a little
                         easier and your child’s day a lot more fun!
                     </p>
-                    <div class="popup-btn">
-                        <a href="about.html">About us</a>
-                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-3 text-center">
                     <img style="width:600px;" src="{{asset('/assets/storage/Image4.jpg')}}" alt="image4">
                 </div>
-
             </div>
         </div>
     </div>

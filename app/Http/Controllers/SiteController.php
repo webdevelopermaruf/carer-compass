@@ -176,6 +176,22 @@ class SiteController extends Controller
 
     public function register_carer(Request $request)
     {
+        $validateData = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:carer-providers',
+            'phone' => 'required',
+            'location' => 'required',
+            'whatsapp' => 'required',
+            'service_area' => 'required',
+            'about' => 'required',
+            'experience' => 'required',
+            'training' => 'required',
+            'password' => [
+                'required',
+                'regex:/^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};\'":\\|,.<>\/?]).{8,}$/'
+            ],
+        ]);
+
         // processing the service areas -> exploding by comma & trimming and upper-casing every element.
         $service_areas = array_map('strtoupper', array_map('trim',explode(",", $request->input('service_area'))));
 

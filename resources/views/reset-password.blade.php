@@ -7,10 +7,29 @@
                 <h2>Change Password</h2>
             </div>
             <div class="login-form-box">
+                @if ($errors->any())
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
+                    @if (session('success'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            {{ session('success') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
                 <div class="login-card">
                     <form action="/reset-password" method="POST">
                         @csrf
                         <input type="hidden" name="reset_token" value="{{$token}}">
+                        <input type="hidden" name="email" value="{{request()->query('email')}}">
                         <div class="form-group">
                             <input class="input-field form-control" type="password" placeholder="Password" required name="password">
                         </div>
