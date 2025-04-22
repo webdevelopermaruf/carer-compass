@@ -4,40 +4,16 @@
     <!-- offer-section -->
     <div class="offer-section offer-section1">
         <h2>We offer you the <span class="support">best support</span></h2>
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
-                    <div class="offer-section-box">
-                        <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img1.png" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <h5>Home Care</h5>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                    </div>
+                    <img style="max-width:200px;" src="{{asset('/assets/storage/Image1.png')}}" alt="image1">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
-                    <div class="offer-section-box">
-                        <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img2.png" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <h5>Care Services</h5>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                    </div>
+                    <img style="max-width:200px;" src="{{asset('/assets/storage/Image2.jpg')}}" alt="image2">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
-                    <div class="offer-section-box">
-                        <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <h5>Medical Escort</h5>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                    </div>
+                    <img style="max-width:200px;" src="{{asset('/assets/storage/Image3.jpg')}}" alt="image3">
                 </div>
             </div>
         </div>
@@ -47,141 +23,87 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-3">
-                    <h2 data-aos="fade-up">Welcome to Sen<span class="support">Care</span></h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.</p>
+                    <h2 data-aos="fade-up">Welcome to Carer Compass</h2>
+                    <p>
+                        Welcome to Carer Compass, your trusted solution for flexible,
+                        long-term or short-term childcare when you need it most. Whether
+                        you’re running errands, attending appointments, or just need a little
+                        time to yourself, we’re here to give you peace of mind. Our friendly
+                        and experienced carers provide a safe, caring space where
+                        children can play, learn, and develop on their natural curiosity —
+                        even for just a few hours. With convenient drop-in options and a
+                        warm, welcoming environment, we’re here to make your day a little
+                        easier and your child’s day a lot more fun!
+                    </p>
                     <div class="popup-btn">
                         <a href="about.html">About us</a>
                     </div>
-                    <h4>Need clinical advice?</h4>
-                    <h4 class="popup-section-number">0800 123 45 678</h4>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 mb-lg-0 mb-md-0 mb-3">
-                    <div class="video-section-box">
-                        <a class="popup-vimeo"
-                           href="https://previews.customer.envatousercontent.com/bfa4eae3-5be3-457e-9c5f-31e840d016e5/watermarked_preview/watermarked_preview.mp4">
-                            <figure class="mb-0">
-                                <img src="assets/images/popup-video-img.png" style="cursor: pointer" alt=""
-                                     class="img-fluid video-img">
-                            </figure>
-                        </a>
-                        <figure class="position-absolute popup-top-figure">
-                            <img src="assets/images/video-section-top-img.png" alt="" class="img-fluid">
-                        </figure>
-                        <figure class="position-absolute popup-bottom-figure">
-                            <img src="assets/images/video-section-bottom-img.png" alt="" class="img-fluid">
-                        </figure>
-                    </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-3 text-center">
+                    <img style="width:600px;" src="{{asset('/assets/storage/Image4.jpg')}}" alt="image4">
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Counter-Section -->
-    <div class="counter-section2">
-        <div class="container">
-            <div class="counter-inner-row">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-lg-0 mb-md-0 mb-sm-2">
-                        <div class="counter-inner-box vl-border">
-                            <h5><span class="counter">45</span></h5>
-                            <p>Donations Every Year</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-lg-0 mb-md-0 mb-sm-2">
-                        <div class="counter-inner-box vl-right-border">
-                            <h5><span class="counter">690</span></h5>
-                            <p>Great Local Volunteers</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-lg-0 mb-md-0 mb-sm-2">
-                        <div class="counter-inner-box">
-                            <h5><span class="counter">437</span></h5>
-                            <p>Face to Face Visits</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-lg-0 mb-md-0 mb-sm-2">
-                        <div class="counter-inner-box border-right-box">
-                            <h5><span class="counter">170</span></h5>
-                            <p>Organized Local Events</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
     <!-- Service-Offer-Section -->
-    <div class="service-offer-section service-offer-section2">
+    <div class="service-offer-section service-offer-section2 pt-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="service-offer-content" data-aos="fade-up">
-                        <h2>Services We<span class="support">Offer</span></h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</p>
+                        <h2>Advice for parents</h2>
+                        <p>Unsure on what to bring?</p>
                     </div>
                     <div class="service-inner">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-6 col-sm-12">
-                                <figure class="service-figure-mb">
-                                    <img src="assets/images/service-offer-left-img.png" alt="" class="img-fluid">
-                                </figure>
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <h4>Change of clothes (weather-appropriate)</h4>
                             </div>
-                            <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="offer-inner-box offer-inner-box1 offer-inner-box2">
-                                            <figure class="service-figure-mb">
-                                                <img src="assets/images/offer-icon1.png" alt="" class="img-fluid">
-                                            </figure>
-                                            <h4>Medical Record</h4>
-                                            <p>Duis aute irure dolor in reprehen voluptate velit esse cillum.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="offer-inner-box offer-inner-box1 offer-inner-box2">
-                                            <figure class="service-figure-mb">
-                                                <img src="assets/images/offer-icon2.png" alt="" class="img-fluid">
-                                            </figure>
-                                            <h4>Ambulance</h4>
-                                            <p>Duis aute irure dolor in reprehen voluptate velit esse cillum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- row2 -->
-                                <div class="offer-section-row2">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <div class="offer-inner-box offer-inner-box2">
-                                                <figure class="service-figure-mb">
-                                                    <img src="assets/images/offer-icon3.png" alt="" class="img-fluid">
-                                                </figure>
-                                                <h4>Medical Advice</h4>
-                                                <p>Duis aute irure dolor in reprehen voluptate velit esse cillum.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <div class="offer-inner-box">
-                                                <figure class="service-figure-mb">
-                                                    <img src="assets/images/offer-icon4.png" alt="" class="img-fluid">
-                                                </figure>
-                                                <h4>24/7 Support</h4>
-                                                <p class="mb-0">Duis aute irure dolor in reprehen voluptate velit esse
-                                                    cillum.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <img style="max-width: 200px" src="{{asset('assets/storage/Image5.jpg')}}" alt="">
                             </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <h4>Comfort
+                                    items
+                                    (if needed)
+                                </h4>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <img style="max-width: 200px" src="{{asset('assets/storage/Image6.jpg')}}" alt="">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <h4>Any
+                                    necessary
+                                    medications
+                                </h4>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <img style="max-width: 200px" src="{{asset('assets/storage/Image7.jpg')}}" alt="">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <h4>Snacks or
+                                    special
+                                    dietary needs</h4>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                                <img style="max-width: 200px" src="{{asset('assets/storage/Image8.jpg')}}" alt="">
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <h5 class="w-lg-50" style="color:black" >
+        Additionally these can be discussed and agreed
+        with the carer prior to your booking. Don’t forget
+        to bring big smiles and lots of energy!
+    </h5>
 @endsection
 
 @section('hero')

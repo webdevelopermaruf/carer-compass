@@ -1,4 +1,9 @@
 @extends('app')
 @section('page')
-    <a href="/" class="btn btn-dark">Go Home Page</a>
+    <div class="container text-center my-5">
+        <h1>404</h1>
+        <div>
+            <a href="/" class="btn">Go Home Page</a>
+        </div>
+    </div>
 @endsection

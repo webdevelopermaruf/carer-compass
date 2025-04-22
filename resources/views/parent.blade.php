@@ -26,45 +26,32 @@
 @endsection
 @section('page')
     <div style="margin-bottom: 150px;">
-        <h1 class="my-3 text-center">Carers List</h1>
+        <h1 class="my-3 text-center">Parent List</h1>
         <table class="container">
             <thead>
             <tr>
+                <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Location</th>
-                <th>WhatsApp</th>
-                <th>Experience</th>
-                <th>Service Area</th>
-                <th>Training</th>
-                <th>Status</th>
                 <th>Action</th>
             </tr>
             </thead>
             <tbody>
-            @foreach($carers as $carer)
+            @foreach($parents as $parent)
                 <tr>
-                    <td>{{$carer->name}}</td>
-                    <td>{{$carer->email}}</td>
-                    <td>{{$carer->phone}}</td>
-                    <td>{{$carer->location}}</td>
-                    <td>{{$carer->whatsapp}}</td>
-                    <td>{{$carer->experience}}</td>
-                    <td>{{implode(',', json_decode($carer->service_area))}}</td>
-                    <td>{{$carer->training}}</td>
-                    @if($carer->status === 0)
-                        <td class="text-primary">Pending</td>
-                    @elseif($carer->status === 1)
-                        <td class="text-success">Approved</td>
-                    @else
-                        <td class="text-danger">Canceled</td>
-                    @endif
+                    <td>{{$parent->id}}</td>
+                    <td>{{$parent->name}}</td>
+                    <td>{{$parent->email}}</td>
+                    <td>{{$parent->phone}}</td>
+                    <td>{{$parent->address}}</td>
                     <td>
-                        @if($carer->status === 0)
-                            <a href="/update_status?status=approved&&carer={{$carer->id}}" class="btn btn-sm btn-success">Approve</a>
-                            <a href="/update_status?status=rejected&&carer={{$carer->id}}" class="btn btn-sm btn-danger mt-2">Cancel</a>
-                        @endif
+                        <a class="btn btn-danger"
+                           href="/delete/parent/{{$parent->id}}"
+                           onclick="return confirm('Are you sure you want to delete this parent?');">
+                            Delete
+                        </a>
                     </td>
                 </tr>
             @endforeach

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Compass</title>
     <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/css/mobile.css')}}">
@@ -59,7 +60,17 @@
                             @if(auth()->user())
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color index2-navlink"
-                                       href="/dashboard">Dashboard</a>
+                                       href="/carer">Carer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-decoration-none navbar-text-color index2-navlink"
+                                       href="/parent">Parents</a>
+                                </li>
+                            @endif
+                            @if(auth()->guard('parent')->user() || auth()->guard('carer')->user())
+                                <li class="nav-item">
+                                    <a class="nav-link text-decoration-none navbar-text-color index2-navlink"
+                                       href="/profile">Profile</a>
                                 </li>
                             @endif
                             @if(auth()->guard('parent')->user() || auth()->guard('carer')->user() || auth()->user())
@@ -184,41 +195,6 @@
                         </h4>
                     </li>
                 </ul>
-                <div class="footer-images">
-                    <div class="images-inner-box">
-                        <ul class="list-unstyled mb-1">
-                            <li class="list-item d-inline-block">
-                                <figure class="mb-0"><img
-                                        src="https://html.designingmedia.com/sencare/assets/images/footer-img1.png"
-                                        alt="Snow" class="img-fluid footer-imgs"></figure>
-                            </li>
-                            <li class="list-item d-inline-block">
-                                <figure class="mb-0"><img src="assets/images/footer-img2.png" alt="Snow"
-                                                          class="img-fluid footer-imgs"></figure>
-                            </li>
-                            <li class="list-item d-inline-block">
-                                <figure class="mb-0"><img src="assets/images/footer-img3.png" alt="Snow"
-                                                          class="img-fluid footer-imgs"></figure>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="images-inner-box">
-                        <ul class="list-unstyled">
-                            <li class="list-item d-inline-block">
-                                <figure class="mb-0"><img src="assets/images/footer-img4.png" alt="Snow"
-                                                          class="img-fluid footer-imgs"></figure>
-                            </li>
-                            <li class="list-item d-inline-block">
-                                <figure class="mb-0"><img src="assets/images/footer-img5.png" alt="Snow"
-                                                          class="img-fluid footer-imgs"></figure>
-                            </li>
-                            <li class="list-item d-inline-block">
-                                <figure class="mb-0"><img src="assets/images/footer-img6.png" alt="Snow"
-                                                          class="img-fluid footer-imgs"></figure>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
