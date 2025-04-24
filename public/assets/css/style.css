@@ -2316,7 +2316,7 @@ h5 {
 
 /* footer-index */
 .footer-index-img {
-    background: url(../images/footer-index-img.jpg);
+    background: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
